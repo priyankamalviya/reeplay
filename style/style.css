@@ -1,6 +1,37 @@
+
+.navigation {
+	top: 0;
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	background-color: #ab1a57;
+	z-index: 2;
+	box-shadow: 3px 3px 3px #E5BACC;
+}
+
+.container {
+	padding-top: 5em;
+}
+.app-title {
+	color: white;
+	display: inline;
+	font-family: 'Tangerine', serif;
+  font-size: 24px;
+}
+
 .search-bar {
-	margin: 20px;
+	margin: 16px;
 	text-align: center;
+	z-index: 3;
+	max-width: 55%;
+	position: relative;
+}
+
+.search-icon {
+	position: absolute;
+	right: 5.5%;
+	z-index: 5;
+	top: 41%;
 }
 
 .search-bar input {

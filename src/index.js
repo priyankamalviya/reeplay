@@ -19,7 +19,7 @@ class App extends Component {
 
     YTSearch({
       key: API_KEY,
-      term: 'surfboards'
+      term: 'fireworks'
     	},
 			(videos) => {
         // console.log(data);
@@ -51,16 +51,20 @@ class App extends Component {
 
 		const videoSearch = _.debounce(term => {this.videoSearch(term)}, 300);
       return (
-        <div>
-            <SearchBar onSearchChange = {videoSearch} />
+      <div>
+        <div className="navigation"><SearchBar onSearchChange = {videoSearch} /></div>
+        <div className="container">
+
             <VideoDetail video={this.state.selectedVideo}/>
             <VideoList
-            	onVideoSelect = {selectedVideo => this.setState({selectedVideo})}
-            	videos={this.state.videos} />
+              onVideoSelect = {selectedVideo => this.setState({selectedVideo})}
+              videos={this.state.videos} />
+
         </div>
+      </div>
       );
   }
 }
 
 // React - plz take this component and put it on the page
-ReactDOM.render(<App />, document.querySelector(".container"));  // App is a class, <App /> is an instance of a class
+ReactDOM.render(<App />, document.querySelector(".main"));  // App is a class, <App /> is an instance of a class
