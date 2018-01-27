@@ -1,9 +1,9 @@
 {
-  "name": "redux-simple-starter",
+  "name": "Reeplay",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "Search and play youtube videos faster",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": "git@github.com:priyankamalviya/reeplay.git",
   "scripts": {
     "start": "webpack-dev-server",
     "prod": "NODE_ENV=production node server.js",
